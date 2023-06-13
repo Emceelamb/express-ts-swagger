@@ -5,7 +5,8 @@
     "predev": "npm run swagger",
     "dev": "concurrently \"nodemon\" \"nodemon -x tsoa spec\"",
     "swagger": "tsoa spec",
-    "start": "node build/index.js"
+    "start": "node build/index.js",
+    "prettier": "npx prettier --write ."
   },
   "nodemonConfig": {
     "watch": [
