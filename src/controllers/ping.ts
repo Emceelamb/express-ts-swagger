@@ -6,6 +6,9 @@ interface PingResponse {
 
 @Route("ping")
 export default class PingController {
+  /**
+   * Test if API is online.
+   */
   @Example<PingResponse>({
     message: "pong",
   })
