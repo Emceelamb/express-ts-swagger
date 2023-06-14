@@ -89,6 +89,7 @@
 						}
 					}
 				},
+				"description": "Test if API is online.",
 				"security": [],
 				"parameters": []
 			}
@@ -98,7 +99,7 @@
 				"operationId": "GetQuote",
 				"responses": {
 					"200": {
-						"description": "Ok",
+						"description": "An array",
 						"content": {
 							"application/json": {
 								"schema": {
@@ -122,9 +123,11 @@
 						}
 					}
 				},
+				"description": "Retrieves a single quote or all quotes.",
 				"security": [],
 				"parameters": [
 					{
+						"description": "A quote's id.",
 						"in": "query",
 						"name": "id",
 						"required": false,

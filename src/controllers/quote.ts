@@ -15,6 +15,12 @@ interface QuoteResponse {
 
 @Route("quote")
 export default class QuoteController {
+  /**
+   *  Retrieves a single quote or all quotes.
+   *
+   * @param id A quote's id.
+   * @returns An array
+   */
   @Example<QuoteResponse>({
     quotes: [
       {
